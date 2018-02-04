@@ -1,0 +1,25 @@
+{
+    "currency": "&euro;",
+    "vat": 22,
+    "withholding_tax": 20,
+    "national_pension_fund": 4,
+    "consultant": {
+        "fullname": "Wile Coyote",
+        "job": "road runner hunter",
+        "address": "-- address --",
+        "city": "-- city --",
+        "phone": "-- phone-number --",
+        "web": "https://it.wikipedia.org/wiki/Wile_E._Coyote_e_Beep_Beep",
+        "email": "wile@coyote.com",
+        "fiscal_code": "-- fiscal-code --",
+        "vat_number": "-- vat-number --",
+        "fee": "1500.00",
+        "iban": "-- iban --"
+    },
+    "company": {
+        "name": "ACME Inc.",
+        "address": "-- address --",
+        "city": "-- city --",
+        "vat_number": "-- vat-number --"
+    }
+}
