@@ -98,7 +98,11 @@
                         </div>
                     </div>
                     <div class="col">
-                        <h6>{{ consultant.fullname }}</h6>
+                        <h6>
+                            {{ consultant.fullname }}
+                            <br>
+                            {{ consultant.job|title }}
+                        </h6>
                         <p>
                             <table>
                                 <tr>
