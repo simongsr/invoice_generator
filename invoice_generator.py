@@ -26,10 +26,12 @@ ENV: Environment = Environment(
 
 
 def last_month() -> tuple:
-    onemonthago = date.today() - relativedelta(month=1)
-    weekday, ndays = calendar.monthrange(onemonthago.year, onemonthago.month)
-    return (date(onemonthago.year, onemonthago.month, 1),
-    date(onemonthago.year, onemonthago.month, ndays))
+    today = date.today()
+    month = today.month - 1 if today.month > 1 else 12
+    year = today.year if today.month > 1 else today.year - 1
+    weekday, ndays = calendar.monthrange(year, month)
+    return (date(year, month, 1),
+    date(year, month, ndays))
 
 
 start_date, end_date = last_month()
